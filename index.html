@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/c3403f1a45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>TamaGo</title>
+  </head>
+  <body>
+    <header><img class="tamagologo" src="assets/tamago-logo.png" /></header>
+
+    <!-- welcome modal -->
+    <div id="welcome-box" class="modal">
+      <div class="modal-content">
+        <p id="welcome">Welcome to tamaGO!</p> 
+        <p class="intructions">
+          <span class="rules">Objective:</span> match all of the cards in under
+          60 seconds.
+        </p>
+        <p class="instructions">
+          <span class="rules">Match:</span> a match is made when the two cards
+          turned picture-side-up are identical.
+        </p>
+        <div class="button-container">
+          <button id="play-btn" class="button">PLAY</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- game content -->
+    <main>
+      <div class="timer-container">
+        <button id="info-btn" class="button">INSTRUCTIONS</button>
+        <div class="timer"></div>
+        <div class="reset button">RESET</div>
+      </div>
+
+<div class="mainguy">
+    <div class="card-container">
+      
+    </div>
+  </div>
+
+    <!-- times up modal -->
+    <div class="modal lose hide" >
+      <div class="modal-content">
+        <p id=“times-up”>Time’s Up! </p>
+        <p><i class="fa-solid fa-fish"></i></p>
+        <p class=“dont-fret”>
+          You gotta be quicker than that! —— play again to keep matching sushi!
+        
+        </p>
+      </div>
+    </div>
+
+    <!-- winning modal -->
+    <div class="modal winning hide">
+      <div  class="modal-content">
+        <p id=“winning”><i class="fa-solid fa-fish-fins"></i> You did it! <i class="fa-solid fa-fish-fins"></i></p>
+        <p class=“congrats”>
+          You matched all of the sushi! Congratulations!
+        </p>
+
+      </div>
+    </div>
+    
+    <footer>
+      <div class="start-button">START</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- 
+Header - will be logo 
+First Div will be timer 
+Main will be where our cards go
+Second Div will be our Start Button
+-->
